@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" /> 
+    <link rel="icon" type="image/svg+xml" href="https://seeklogo.com/images/B/Batman-logo-6ECADCDC52-seeklogo.com.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Batman</title>
+  </head>  
+  <body>
+    <header>
+        <nav>
+          <ul>
+            <li><a href="#cabecera">Bienvenida</a></li>
+            <li><a href="#carousel">Carousel</a></li>
+            <li><a href="#section-3">Música</a></li>
+            <li><a href="#sugerencias">Sugerencias</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div class="cabecera" id="cabecera">
+        <h1>BatmanCineCards</h1>
+        <p>"¡Te doy la bienvenida a <strong>©️BatmanCineCards</strong>, el lugar donde la historia de Batman cobra vida en cada tarjeta! Sumérgete en el emocionante
+          mundo de Batman, desde 1969 hasta 2022. Descubre los secretos de cada peícula del Caballero de la Noche.
+          ¡Ven y únete a la aventura en <strong>©️BatmanCineCards</strong>, donde cada tarjeta es un recuerdo, y cada película, una experiencia única!"</p>          
+      </div>
+      <section id="carousel">
+        <div class="carousel">
+          <h2>Carousel de imágenes</h2>
+          <p>"¡Dale un giro a la rueda de la fortuna de Batman! <strong>Haz clic en una de las imágenes del carousel</strong> para desbloquear un mundo de 
+            tarjetas llenas de detalles sobre todas las películas del Caballero de la Noche. 
+            Solo tienes que hacer un click para desatar la magia de Batman. ¡Aventura garantizada!"
+          </p>
+        </div>
+        <div id="app"></div> 
+        <li id="btn-delete" class="BTN"><button class="btn-delete" click="limpiarBajoImagen()"><strong>Borrar</strong> tarjetas</button></li>
+      </section>
+      <section>
+        <div id="section-2"></div>
+      </section>
+      <section>
+        <div id="section-3">
+          <h2>Bandas Sonoras</h2>
+          <p>"¡Ponte los auriculares y sumérgete en el mundo de Batman como nunca antes! Escucha las épicas bandas sonoras que acompañaron
+              al Caballero de la Noche en cada una de sus películas.
+              ¡Deja que la música te lleve a las calles oscuras de Gotham!"</p>
+              <button id="btnMusica" class="btnMusica" click="playMusic()">MÚSICA</button>
+                <ul id="ulMusic" style="display:none;">
+                  <li>
+                    <p>Batman 1966</p>
+                    <audio id="audioPlayer"  controls class="audioPlayer">
+                      <source src="/audios/Batman1966.mp3" type="audio/mpeg">            
+                    </audio>
+                  <button id="playButton" class="playButton"></button>
+                  </li>
+                  <li>
+                    <p>Batman 1989</p>
+                    <audio id="audioPlayer"  controls class="audioPlayer">
+                      <source src="/audios/Batman1989.mp3" type="audio/mpeg">            
+                    </audio>
+                  <button id="playButton" class="playButton"></button>
+                  </li>
+                  <li>
+                    <p>Batman 2005</p>
+                    <audio id="audioPlayer"  controls class="audioPlayer">
+                      <source src="/audios/Batman2005.mp3" type="audio/mpeg">            
+                    </audio>
+                  <button id="playButton" class="playButton"></button>
+                  </li>
+                  <li>
+                    <p>Batman 2012</p>
+                    <audio id="audioPlayer"  controls class="audioPlayer">
+                      <source src="/audios/Batman2012.mp3" type="audio/mpeg">            
+                    </audio>
+                  <button id="playButton" class="playButton"></button>
+                  </li>
+                  <li>
+                    <p>Batman 2022</p>
+                    <audio id="audioPlayer"  controls class="audioPlayer">
+                      <source src="/audios/Batman2022.mp3" type="audio/mpeg">            
+                    </audio>
+                    <button id="playButton" class="playButton"></button>
+                  </li>
+                </ul> 
+        </div>
+      </section>
+      <div id="sugerencias">
+        <h4>Sugerencias</h4>
+        <p>"¿Tienes ideas para hacer de <strong>©️BatmanCineCards</strong> un mejor lugar para los fanáticos de Batman? 
+          ¡Queremos escucharlas! Tu opinión es valiosa. 
+          Por favor, comparte tus sugerencias con nosotros para que juntos hagamos este sitio aún más increíble.
+          ¡Esperamos tus bati-ideas!"</p>
+          <a href="mailto:gabriel.garcia.development@gmail.com">🦇 Escríbeme 🦇</a>
+      </div>
+    </main>
+    <footer>
+    <ul>
+      <li>
+        <a href="https://github.com/Gabi-Garcia"  target="_blank">
+          <div class="imgFooter">
+            <img src="/images/github (1).png" alt="Github-img">
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" target="_blank">
+          <div class="imgFooter">
+            <img src="/images/logotipo-de-linkedin (1).png" alt="Linkedin-img">
+          </div>
+        </a>
+      </li>
+      <li>
+        <a href="mailto:gabriel.garcia.development@gmail.com">
+          <div class="imgFooter">
+            <img src="/images/email.png" alt="email-img">
+          </div>
+        </a>
+      </li>      
+    </ul>
+    <p>©️Creado por Gabi-Garcia</p>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body> 
+</html>
