@@ -1,5 +1,6 @@
 import { IMAGES } from './constants';
 import './style.css';
+import { Navbar } from './NavBarComponent';
 
 //Setup de la aplicación
 const appElement = document.querySelector('#app');
@@ -7,12 +8,18 @@ const pruebaElement = document.querySelector('#section-2')
 const btnDelete = document.querySelector('#btn-delete')
 const ulMusic = document.querySelector('#ulMusic')
 const btnMusica = document.querySelector('#btnMusica')
+const btnBurguer = document.querySelector('.burguerButton')
+const navUl = document.querySelector('nav > ul')
 
 
 /**AUDIO*/
 const audioPlayer = document.getElementById("audioPlayer");
 const playButton = document.getElementById("playButton"); 
 /***/
+
+const header = document.querySelector("header");
+header.innerHTML = Navbar();
+
 
 const printBajoImagen = () => {
   IMAGES.forEach((image)=>{
@@ -33,23 +40,24 @@ const printBajoImagen = () => {
     </div>
     </ul>
     `
-  })
-}
+  }
+)}
+
 const limpiarBajoImagen = () => { 
   pruebaElement.innerHTML = ''
   btnDelete.addEventListener('click', limpiarBajoImagen);
 }
-
-IMAGES.forEach((image) => {
-  const getCarouselTemplate = ()=> 
+let getCarouselTemplate;
+IMAGES.forEach((image) => { 
+getCarouselTemplate = ()=> 
   `
   <div id="thepower-carousel" class="thepower-carousel">
   <ul class="scrollable-set"></ul>
   <div class="image-preview"></div>
   </div>
   `
-  appElement.innerHTML = getCarouselTemplate();
   console.log('IMAGE : ', image.title)
+  appElement.innerHTML = getCarouselTemplate();
 }) 
 
 
@@ -65,8 +73,8 @@ playButton.addEventListener("click", function () {
 });
 
 const playMusic = () => {
-  if(ulMusic.style.display === 'none'){
-    ulMusic.style.display ='block'
+  if(ulMusic.style.display === 'none'){ 
+    ulMusic.style.display ='flex'
   }else{
     ulMusic.style.display = 'none'
   }
@@ -132,6 +140,8 @@ const setupImagePreview = (src) => {
       })
     };
     setupScrollableSet();
-    setupImagePreview(IMAGES[3].src);
+    setupImagePreview(IMAGES[0].src);
     addScrollableListeners();
     setupCarouselInterval();
+    burguerBurguer()
+    Navbar();

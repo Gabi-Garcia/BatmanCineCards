@@ -50,7 +50,7 @@ export const IMAGES = [
     director:'Leslie H. Martinson',
     duracion:'105 minutos',
     dondeVer:'Consulta servicios de alquiler de películas en línea o bibliotecas locales.',
-    src:'https://pics.filmaffinity.com/Batman-473440027-large.jpg',
+    src:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbatman_the_movie&psig=AOvVaw2vCCQV-RpTnOZOWB2kg3hD&ust=1717857535232000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDnyZbcyYYDFQAAAAAdAAAAABAE',
     temaPrincipaldelaBandaSonora:'"Batman Theme" por Neal Hefti',
     compositordelaBandaSonora:'Neal Hefti',
     premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
