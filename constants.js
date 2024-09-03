@@ -43,6 +43,45 @@
 //     },
 // ]
 export const IMAGES = [
+    {
+        title:'Batman:The Movie(1966)',
+        anio:1966,
+        reparto:'Adam West, Burt Ward, Cesar Romero.',
+        director:'Leslie H. Martinson',
+        duracion:'105 minutos',
+        dondeVer:'Consulta servicios de alquiler de películas en línea o bibliotecas locales.',
+        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
+        temaPrincipaldelaBandaSonora:'"Batman Theme" por Neal Hefti',
+        compositordelaBandaSonora:'Neal Hefti',
+        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
+        alt:'Batman: The Movie (1966)' 
+    },
+    {
+        title:'Batman:The Movie(1966)',
+        anio:1966,
+        reparto:'Adam West, Burt Ward, Cesar Romero.',
+        director:'Leslie H. Martinson',
+        duracion:'105 minutos',
+        dondeVer:'Consulta servicios de alquiler de películas en línea o bibliotecas locales.',
+        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
+        temaPrincipaldelaBandaSonora:'"Batman Theme" por Neal Hefti',
+        compositordelaBandaSonora:'Neal Hefti',
+        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
+        alt:'Batman: The Movie (1966)' 
+    },
+    {
+        title:'Batman:The Movie(1966)',
+        anio:1966,
+        reparto:'Adam West, Burt Ward, Cesar Romero.',
+        director:'Leslie H. Martinson',
+        duracion:'105 minutos',
+        dondeVer:'Consulta servicios de alquiler de películas en línea o bibliotecas locales.',
+        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
+        temaPrincipaldelaBandaSonora:'"Batman Theme" por Neal Hefti',
+        compositordelaBandaSonora:'Neal Hefti',
+        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
+        alt:'Batman: The Movie (1966)' 
+    },    
 {
     title:'Batman:The Movie(1966)',
     anio:1966,
@@ -50,7 +89,7 @@ export const IMAGES = [
     director:'Leslie H. Martinson',
     duracion:'105 minutos',
     dondeVer:'Consulta servicios de alquiler de películas en línea o bibliotecas locales.',
-    src:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.rottentomatoes.com%2Fm%2Fbatman_the_movie&psig=AOvVaw2vCCQV-RpTnOZOWB2kg3hD&ust=1717857535232000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCMDnyZbcyYYDFQAAAAAdAAAAABAE',
+    src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
     temaPrincipaldelaBandaSonora:'"Batman Theme" por Neal Hefti',
     compositordelaBandaSonora:'Neal Hefti',
     premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',

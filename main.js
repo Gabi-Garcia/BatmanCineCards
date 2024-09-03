@@ -47,7 +47,9 @@ const limpiarBajoImagen = () => {
   pruebaElement.innerHTML = ''
   btnDelete.addEventListener('click', limpiarBajoImagen);
 }
+
 let getCarouselTemplate;
+
 IMAGES.forEach((image) => { 
 getCarouselTemplate = ()=> 
   `
@@ -61,7 +63,7 @@ getCarouselTemplate = ()=>
 }) 
 
 
-//Lógica de la aplicación
+//AUDIOS
 playButton.addEventListener("click", function () {
     if (audioPlayer.paused) {
         audioPlayer.play();
@@ -134,7 +136,8 @@ const setupImagePreview = (src) => {
     };
     const addScrollableListeners = () => {
       const scrollables = document.querySelectorAll('li.clickable');
-      scrollables.forEach((scrollable)=>{``
+      scrollables.forEach((scrollable)=>{`
+        `
         limpiarBajoImagen()
         scrollable.addEventListener('click', handleChangePreview)
       })

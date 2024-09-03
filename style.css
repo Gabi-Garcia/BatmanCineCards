@@ -43,69 +43,7 @@
     padding:0rem;
     
   }
-    /*
-  nav{
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    width: 100%;
-    padding:7px;
-   
-  }
-  h3{
-    font-family: "BatmanForeverAlternate"; 
-    font-size:1.5rem;
-    position: absolute;
-    margin-left: 10%;
-    text-align: center;
-    
-  }
-  .burguer {
-
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
-    border: 1px solid blue;
-  }
-  .burguer > .burguerButton{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  .burguer > .burguerButton > .burguerDiv{
-    width: 100%;
-    height: 100%;
-  }
-  .burguer > .burguerButton > .burguerDiv img{
-    width: 100%;
-    height: 100%;
-  }
-  nav ul{
-    padding:0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    gap:0rem;
-    margin-top:30px;
-   
-  }
-  nav ul li{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding:0px;
-    padding:00px;
-    gap:0px;
- 
-    }
-    nav ul li a{
-      padding: 0px;
-      font-family: "Grenze Gotisch", serif;
-      color:white;
-      font-size:1.2rem;
-      cursor: pointer;
-      } */
+  
       .cabecera{
         width: 100%;
         align-items: center;
@@ -391,37 +329,26 @@ main #section-3 ul li{
 footer{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top:70px;
+  margin-top:170px;
   padding:15px;
+  /* border: 1px solid red; */
 }
-footer ul{
-  padding:10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-footer li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width:20px;
-  height:20px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
+footer a{
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid blue; */
 }
 footer p{
-  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
   width: 80%;
+  font-size: 0.8rem;
   margin: auto;
   color: black;
+  /* border:1px solid yellow */
 }
 }
 /*******************************************************************************************************************/
@@ -432,53 +359,7 @@ footer p{
     margin:0.25rem;
     padding:0.50rem;
   }
-  /* header{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top:0px;
-    padding:2rem;
-  
-  }
-  nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding:7px;
-   
-  }
-  h3{
-    display: none;
-  }
-  nav ul{
-    padding:8px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap:0.25rem;
-    justify-content: space-between;
-    border: 1px solid blue;
-  }
-  .burguer{
-    display: none;
-  }
-  nav ul li{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding:10px;
-    padding:10px;
-    gap:0px;
-   
-    }
-    nav ul li a{
-      padding: 5px;
-      font-family: "Grenze Gotisch", serif;
-      color:white;
-      font-size:1.5rem;
-      cursor: pointer;
-      } */
+ 
       .cabecera{
         width: 100%;
         align-items: center;
@@ -509,7 +390,7 @@ h1{
 }
 #carousel{
   margin-top:50px;
-  /* border: 1px solid violet; */
+  border: 1px solid violet;
 }
 #carousel p {
   margin: auto;
@@ -526,35 +407,32 @@ h2, h4{
 .thepower-carousel{
   display: flex;
   flex-wrap: wrap;
-  flex-direction:column;
+  flex-direction:column-reverse;
   width: 80%;
-  justify-content: space-around;
-  height:100vh;
+  /* height:90vh; */
   margin: auto;
-  margin-top: 30px;
-  /* border: 1px solid green; */
+  margin-top:0px;
+  border: 1px solid green;
 }
 
 .scrollable-set{
   display: flex;
+  flex-direction: row;
   padding:5px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  align-items: center;
+  overflow-x:scroll;
   gap: 0.30rem;
-  margin-top:0px;
   cursor: pointer;
-  width:25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-left:15px;
-  border: 2px solid  gray;
+  width:100%;
+  margin: auto;
+  margin-top:20px;
+  border: 1px solid blue;
+  }
+  .scrollable-set > * {
+    flex-shrink: 0; /* Evita que los elementos hijos se reduzcan */
   }
   li.clickable{
     display: flex;
-    flex-direction: column;
-    width:180px;
+    width: 200px;
     height:200px;
     margin-top:0px;
     cursor: pointer;
@@ -566,43 +444,46 @@ h2, h4{
       pointer-events: none;
       padding:0px;
       cursor: pointer;
-      /* border: 1px solid  goldenrod; */
+      border: 1px solid  goldenrod;
       }
       div.image-preview{
-        width:70%;
-        height:100%;
+        width:400px;
+        height: 400px;
+         background-position: top;
+         background-size:cover;
         margin: auto;
-        background-position:top;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-color:var(--color-secondary);
-        border-radius: 10px;
-        margin-top:0px;
-        /* border: 2px solid  gray; */
+        margin-top: 30px;
+        border: 2px solid  gray;
         }
         .BTN{
-          width:150px;
+          width: 120px;
           display: flex;
           justify-content: center;
           border-radius: 7px;
-          padding: 10px;
-          border:1px solid goldenrod;
+          padding: 5px;
           background-color: rgb(241, 235, 235);
           margin: auto;
           margin-top:60px;
+          &&{
+            button.btn-delete{
+              width: 130px;
+              height: 30px;
+              flex-wrap: wrap;
+              padding:0px;
+              border-radius: 7px;
+              cursor: pointer;
+              text-align: center;
+              margin-left:0px;
+              margin-top:0px;
+              font-size: 0.8rem;
+              margin: auto;
+              border: none;
+              /* border:1px solid  red */
+            }
           }
-          button.btn-delete{
-            flex-wrap: wrap;
-            padding:6px;
-            border: 0px;
-            cursor: pointer;
-            text-align: center;
-            margin-left:0px;
-            margin-top:0px;
-            font-size: 0.9rem;
-            margin: auto;
-            /* border:1px solid  red */
-          }
+          /* border:1px solid goldenrod; */
+        }
+      
 /*section---2*/
 #section-2{
   display: flex;
@@ -617,12 +498,12 @@ main  #section-2 li.clickable{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width:350px;
-  height:450px;
+  width:250px;
+  height:350px;
   align-items: center;
   margin: auto;
   margin-top: 20px;
-  /* border: 1px solid green; */
+  border: 2px solid red;
 }
 
 .datos{
@@ -740,36 +621,25 @@ main #section-3 ul li{
 footer{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top:70px;
+  margin-top:170px;
   padding:15px;
+  /* border: 1px solid red; */
 }
-footer ul{
-  padding:10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-footer li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width:25px;
-  height:25px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
+footer a{
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid blue; */
 }
 footer p{
-  font-size: 1.2rem;
-  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 70%;
+  font-size: 1rem;
   margin: auto;
   color: black;
+  /* border:1px solid yellow */
 }
 }
