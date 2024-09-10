@@ -11,11 +11,17 @@ export const printBajoImagen = (imageData) => {
   // Actualiza el contenido con los datos de la imagen clicada
   pruebaElement.innerHTML = `
     <div class="printBajoImagen">
-      <p>${imageData.title} - Año: ${imageData.anio}</p>
-      <p>${imageData.reparto}</p>
-      <div class="imgBox">
-        <img src="${imageData.src}" alt="${imageData.alt}" />
-      </div>
+    <div class="imgBox">
+      <img src="${imageData.src}" alt="${imageData.alt}" />
+    </div>
+      <p>Título:${imageData.title}</p>
+      <p>Año:${imageData.anio}</p>
+      <p>Reparto:${imageData.reparto}</p>
+      <p>Director:${imageData.director}</p>
+      <p>Duración:${imageData.duracion}</p>
+      <p>Banda Sonora:${imageData.temaPrincipaldelaBandaSonora}</p>
+      <p>Compositor:${imageData.compositordelaBandaSonora}</p>
+      <p>Premios:${imageData.premios}</p>
     </div>
   `;
 };

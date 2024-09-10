@@ -4,7 +4,18 @@ import { printBajoImagen } from '../componentes/PrintBajoImagen/PrintBajoImagen'
 export const setupScrollableSet = (scrollableSet, setupImagePreview, resetCarouselPreview) => {
   const getScrollableElementTemplate = (image, index) => `
     <li role="button" class="clickable">
-      <img id="image-${index}" src="${image.src}" alt="${image.alt}" title="${image.title}" anio="${image.anio}" />
+      <img id="image-${index}" 
+        src="${image.src}"
+        alt="${image.alt}"
+        title="${image.title}"
+        anio="${image.anio}" 
+        reparto="${image.reparto}" 
+        director="${image.director}" 
+        duracion="${image.duracion}" 
+        temaPrincipaldelaBandaSonora="${image.temaPrincipaldelaBandaSonora}"
+        compositordelaBandaSonora="${image.compositordelaBandaSonora}"
+        premios="${image.premios}" />
+       
     </li>
   `;
 
@@ -28,7 +39,12 @@ export const setupScrollableSet = (scrollableSet, setupImagePreview, resetCarous
           alt: image.alt,
           title: image.title,
           anio: image.getAttribute('anio'),
-          reparto: image.getAttribute('reparto')
+          reparto:image.getAttribute('reparto'),
+          director:image.getAttribute('director'),
+          duracion:image.getAttribute('duracion'),
+          temaPrincipaldelaBandaSonora:image.getAttribute('temaPrincipaldelaBandaSonora'),
+          compositordelaBandaSonora:image.getAttribute('compositordelaBandaSonora'),
+          premios:image.getAttribute('premios')  
         });
 
       });
