@@ -1,40 +1,5 @@
 export const IMAGES = [
-    {
-        title:'Batman:The Movie(1966)',
-        anio:1966,
-        reparto:'Adam West, Burt Ward, Cesar Romero.',
-        director:'Leslie H. Martinson',
-        duracion:'105 minutos',
-        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
-        temaPrincipaldelaBandaSonora:'Batman Theme por Neal Hefti',
-        compositordelaBandaSonora:'Neal Hefti',
-        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
-        alt:'Batman: The Movie (1966)' 
-    },
-    {
-        title:'Batman:The Movie(1966)',
-        anio:1966,
-        reparto:'Adam West, Burt Ward, Cesar Romero.',
-        director:'Leslie H. Martinson',
-        duracion:'105 minutos',
-        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
-        temaPrincipaldelaBandaSonora:'Batman Theme por Neal Hefti',
-        compositordelaBandaSonora:'Neal Hefti',
-        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
-        alt:'Batman: The Movie (1966)' 
-    },
-    {
-        title:'Batman:The Movie(1966)',
-        anio:1966,
-        reparto:'Adam West, Burt Ward, Cesar Romero.',
-        director:'Leslie H. Martinson',
-        duracion:'105 minutos',
-        src:'https://i.ebayimg.com/images/g/SxgAAOSw8AZgWVqv/s-l1200.jpg',
-        temaPrincipaldelaBandaSonora:'Batman Theme por Neal Hefti',
-        compositordelaBandaSonora:'Neal Hefti',
-        premios:'Ganadora de un Oscar al Mejor Diseño de Vestuario.',
-        alt:'Batman: The Movie (1966)' 
-    },    
+   
 {
     title:'Batman:The Movie(1966)',
     anio:1966,
@@ -60,16 +25,64 @@ export const IMAGES = [
     alt:'Batman (1989).'
 },
 {
-    title:'Batman Begins(2005)',
+    title:'Batman vuelve(1992)',
+    anio:1992,
+    reparto:'Michael Keaton, Danny DeVito, Michelle Pfeiffer, Christopher Walken',
+    director:'Tim Burton.',
+    duracion:'126 minutos.',
+    src:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0103776%2F&psig=AOvVaw16V29W7UrUyXBLt-ri75JE&ust=1726309666034000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiYx-3av4gDFQAAAAAdAAAAABAE',
+    temaPrincipaldelaBandaSonora:'Face to Face',
+    compositordelaBandaSonora:'Danny Elfman.',
+    premios:'Ganadora de dos premios Oscar. Mejor Maquillaje y Mejores efectos especiales',
+    alt:'Batman vuelve(1992)'
+},
+{
+    title:'Batman Forever (1995)',
+    anio:1995,
+    reparto:'Val Kilmer, Tommy Lee Jones, Jim Carrey, Chris O Donnell, Nicole Kidman',
+    director:'Joel Schumacher',
+    duracion:'122 minutos',
+    src:'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.imdb.com%2Ftitle%2Ftt0112462%2F&psig=AOvVaw09uV4-UO1WDqF16aM7CdGD&ust=1726310815735000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNCIy4zfv4gDFQAAAAAdAAAAABAE',
+    temaPrincipaldelaBandaSonora:'Batman Forever',
+    compositordelaBandaSonora:'Elliot Goldenthal',
+    premios:'🦇',
+    alt:'Batman Forever(1995)'
+},
+{
+    title:'Batman & Robin (1997)',
+    anio:1997,
+    reparto:'George Clooney, Arnold Schwarzenegger, Uma Thurman, Alicia Silverstone, Robert Swenson',
+    director:'Joel Schumacher',
+    duracion:'125 minutos',
+    src:'https://pics.filmaffinity.com/batman_robin-296955028-mmed.jpg',
+    temaPrincipaldelaBandaSonora:'Batman y Robin',
+    compositordelaBandaSonora:'Elliot Goldenthal',
+    premios:'🦇',
+    alt:'Batman & Robin (1997)'
+},
+{
+    title:'Batman Begins (2005)',
     anio:2005,
-    reparto:'Christian Bale, Michael Caine, Liam Neeson',
+    reparto:'Christian Bale, Cillian Murphy, Liam Neeson, Michael Caine, Morgan Freeman, Gary Oldman,  Katie Homes',
     director:'Christopher Nolan',
     duracion:'140 minutos',
-    src:'https://pics.filmaffinity.com/Batman_Begins-352424097-large.jpg',
-    temaPrincipaldelaBandaSonora:'Vespertilio por Hans Zimmer',
-    compositordelaBandaSonora:'Hans Zimmer',
-    premios:'Ganadora de un Premio Oscar al Mejor Actor de Reparto (Heath Ledger)',
+    src:'https://pics.filmaffinity.com/Batman_Begins-413277928-large.jpg',
+    temaPrincipaldelaBandaSonora:'Eptesicus',
+    compositordelaBandaSonora:'Hans Zimmer y James Newton Howard',
+    premios:'🦇',
     alt:'Batman Begins (2005)'
+},
+{
+    title:'El Caballero Oscuro (2008)',
+    anio:2008,
+    reparto:'Christian Bale, Heath Ledger,  Maggie Gyllenhaal, Aaron Eckhart',
+    director:'Christopher Nolan',
+    duracion:'152 minutos',
+    src:'https://pics.filmaffinity.com/the_dark_knight-102763119-mmed.jpg',
+    temaPrincipaldelaBandaSonora:'Why So Serious',
+    compositordelaBandaSonora:'Hans Zimmer y James Newton Howard',
+    premios:'Premio Empire a la mejor película, MTV Movie Awards al mejor villano, Anexo:BAFTA al mejor actor de reparto, Oscar a la mejor edición de sonido, British Fantasy Award for Best Film, Oscar al mejor actor de reparto, Globo de Oro al mejor actor de reparto, Premio Saturn a la mejor banda sonora, Premio People Choice al Mejor Elenco, Satellite al mejor sonido',
+    alt:'El Caballero Oscuro (2008)'
 },
 {
     title:'The Dark Knight Rises(2012)',
