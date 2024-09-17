@@ -1,4 +1,4 @@
-/*************************************************************************/
+    /*************************************************************************/
     /**********************MEDIA QUERY 320px hasta 767px**********************/
     /**************************************************************************/
     @media (min-width: 320px) and (max-width:767px){
@@ -93,6 +93,7 @@
 /************************MEDIA QUERY DESDE 767px hasta 1500px***********/
 /***********************************************************************/
 @media (min-width: 767px) and (max-width:1500px){
+   
     .main-nav {
         display: flex;  /* Siempre mostrar el menú en pantallas grandes */
         flex-direction: row;  /* Alineación horizontal en pantallas grandes */
@@ -131,51 +132,27 @@
     nav > ul > li {
         display:block;
         text-align: center;
+        justify-content: center;
         width:25%;
         height: 50px;
         padding: 7px;
-        /* background-color: green;*/
         /* border: 1px solid green;  */
     }
     nav > ul > li > a {
-        font-family: "Grenze Gotisch", serif;
+        font-family: "BatmanForeverAlternate"; 
         color:white;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 90%;
+        width: 70%;
         max-height:50px;
         justify-content: space-around;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        margin: auto;
+        &&:hover{
+            color:rgb(202, 194, 194); 
+        }
         /* border: 1px solid white; */
     }
-    nav > ul > li > #themeBtn {
-        padding: 0px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 20%;
-        max-height:35px;
-        justify-content: space-around;
-        font-size: 1rem;
-        /* border: 1px solid white; */
-    }
-    /* nav > ul > li > #themeBtn:hover {
-        margin-top: 0px;
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.2rem;
-        transition: all 0.7s ease-in-out;
-        /* border: 1px solid white; 
-}
-    /* nav > ul > li > a:hover {
-        background: linear-gradient(to right, #9845e8 0%, #33d2ff 50%, #dd5789 100%);
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-        font-size: 1.6rem;
-        transition: all 0.7s ease-in-out;
-    } */ 
+   
 }

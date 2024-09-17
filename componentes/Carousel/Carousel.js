@@ -1,6 +1,7 @@
 import { setupScrollableSet } from '../../Utils/setupScrollableSet';
 import { handleChangePreview } from '../../Utils/handleChangePreview';
 import { IMAGES } from '../../Utils/data';
+import './Carousel.css'
 
 export const initCarousel = (scrollableSet, imagePrevElement) => {
   let actualImageIndex = 0;

@@ -1,3 +1,7 @@
+/**************************************************************************************************************/
+/******************************MEDIA QUERY: TABLET Y DESKTOP***************************************************/
+/**************************************************************************************************************/
+@media screen and (min-width:769px) and (max-width:1500px) {
 #section-2{
     display: flex;
     flex-direction: row;
@@ -6,43 +10,55 @@
     height: 100%;
     padding: 20px;
     margin-top: 50px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
 
 #section-2 > .printBajoImagen{
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin: auto;
+    justify-content: space-around;
     border: 1px solid green;
 }
 #section-2 .datos{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    width: 40%;
+    flex-direction:column;
+    width: 60%;
     margin-top: 0px;
     height: fit-content;
-    border: 1px solid blue;
+    padding: 10px;
+    border: 2px solid  gray;
+    /* border: 1px solid blue; */
 }
 #section-2 > .printBajoImagen p{
-    /* width: 40%; */
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
     font-size: 1rem;
-    border: 1px solid yellow;
+    cursor: pointer;
+    text-align: left;
+    padding: 0px;
+    
+    /* &&:hover{
+    background-color: gray;
+    color: black;
+    border: 1px solid black;
+    }
+    border:1px solid var(--color-secondary);; */
 }
 .imgBox{
-    width: 350px;
+    width: 400px;
     height: 500px;
-    margin: auto;
-    margin-top:0px;
-    border: 1px solid red;
+    /* margin-top: 20px; */
+    background-position: top;
+    background-size:cover;
+    border: 2px solid  gray;
+ 
 }
 .imgBox img{
     width: 100%;
-    height: 100%;
-   
+    height: 100%;  
+}
 }

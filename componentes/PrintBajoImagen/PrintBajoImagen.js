@@ -14,7 +14,7 @@ export const printBajoImagen = (imageData) => {
     <div class="imgBox">
       <img src="${imageData.src}" alt="${imageData.alt}" />
     </div>
-    <div class="datos">
+    <div class="datos"> 
     <p>Título:${imageData.title}</p>
     <p>Año:${imageData.anio}</p>
     <p>Reparto:${imageData.reparto}</p>

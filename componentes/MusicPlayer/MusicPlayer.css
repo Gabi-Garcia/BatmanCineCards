@@ -1,0 +1,89 @@
+/*************************************************************************************************************/
+/*****************************************MEDIA QUERY: TABLET, DESKTOP****************************************/
+/*************************************************************************************************************/
+@media screen and (min-width:769px) and (max-width:1500px) {
+    /*SECTION 3*/
+main #section-3{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    text-align: center;
+    top:150px;
+    /* border: 1px solid red; */
+  }
+  .btnMusica{
+            cursor: pointer;
+            width:10%;
+            display: flex;
+            justify-content: center;
+            /* margin: auto; */
+            margin-top:40px; 
+            margin-left: 130px;
+            border-radius: 7px;
+            padding: 15px;
+            font-size: 0.9rem;
+            font-family: "BatmanForeverAlternate"; 
+            background-color: rgb(241, 235, 235);
+            &&:hover{
+                background-color:rgb(202, 194, 194); 
+            }
+  }
+}
+  main #section-3 ul {
+    width:80%;
+    /* height: 50%; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 7px;
+    background-color:rgb(202, 194, 194); 
+    /* border: 1px solid aqua; */
+  }
+  main #section-3 ul li{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      align-items: center;
+      padding: 5px;
+      width: 70%;
+      margin-top: 5px;
+      margin: auto;
+      /* border: 1px solid yellow; */
+    }
+    main #section-3 ul li p{
+        width: fit-content;
+        display: flex;
+        margin: auto;
+        color: var(--color-secondary);
+        /* border: 1px solid red; */
+    }
+  #audioPlayer{ 
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:0px;
+    width:100%;
+    max-width:250px;
+    margin: 20px auto; 
+    background-color: white;
+    border-radius: 5px;
+  }
+  .playButton{
+    /* width:0px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    font-size: 0;
+    padding:0px;
+    height: 0;
+    border: none;
+    cursor: pointer; */
+    border: none;
+  
+  }
