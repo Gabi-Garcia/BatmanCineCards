@@ -4,36 +4,47 @@
 @media screen and (min-width:768px) and (max-width:1500px){
     #carousel{
         margin-top:0px;
-        background-color: rgb(189, 183, 183);
         /* border: 1px solid violet; */
       }
       #carousel p {
-        margin: auto;
-        margin-top: 30px;
-        font-size: 1.7rem;
-        /* border: 1px solid yellow; */
+              font-size: 1.8rem;
+              font-family: "Grenze Gotisch", serif;
+              font-weight:400;
+              width: 97%;
+              padding: 10px;
+              color:#94a1b2;
+              margin: auto;
+              margin-top: 90px;
+              text-align: center;
+              /* border: 1px solid yellow; */
       }
       .thepower-carousel{
         display: flex;
         flex-wrap: wrap;
-        flex-direction:column-reverse;
-        width: 80%;
+        flex-direction:row;
+        width: 70%;
         margin: auto;
-        margin-top:0px;
+        margin-top:20px;
+        padding: 20px;
+        background-color: #242629;
+        border-radius: 7px;
         /* border: 1px solid green; */
       }
       
       .scrollable-set{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         padding:5px;
-        overflow-x:scroll;
+        overflow-y:scroll;
+        overflow-x:hidden;
         gap: 0.30rem;
         cursor: pointer;
-        width:100%;
+        height:650px;
         margin: auto;
-        margin-top:20px;
-        /* border: 1px solid blue; */
+        margin-top:0px;
+        padding: 10px;
+        background-color: #010101;
+        border: 2px solid #010101;
         }
         .scrollable-set > * {
           flex-shrink: 0; /* Evita que los elementos hijos se reduzcan */
@@ -54,14 +65,15 @@
             cursor: pointer;
             }
             div.image-preview{
-              width:400px;
-              height:600px;
-               background-position: top;
-               background-size:cover;
+              width:450px;
+              height:650px;
+              background-position: top;
+              background-size:cover;
               margin: auto;
-              margin-top: 30px;
+              margin-top: 0px;
               border-radius: 5px;
-              border: 2px solid  gray;
+              border: 2px solid #010101;
+              box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
               }
 
 
