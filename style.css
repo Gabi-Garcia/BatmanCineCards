@@ -36,21 +36,21 @@
 /***********************************************************************************************************/
 /**********************************************MOBILE*******************************************************/
 /**********************************************************************************************************/
-@media screen and (min-width:320px) and (max-width:767px){
+@media screen and (min-width:320px) and (max-width:768px){
   body{
     margin:1rem;
     padding:0rem;
   }
-   header{
+   /* header{
     width: 100%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top:0px;
     padding:0rem;
-    
-  }
-  
+    border: 1px solid blue;
+  } */
       .cabecera{
         width: 100%;
         align-items: center;
@@ -60,19 +60,33 @@
         display: flex;
         flex-wrap:wrap;
         flex-direction:row;
-        margin-top:50px;
-        top:0px;
+        margin-top:30px;
         font-size: 0.8rem;
         /* border:1px solid violet; */
         }
         .cabecera > .img{
           width: 120px;
           height: 180px;
-          /* height: 50%; */
+         /* border: 1px solid yellow; */
         }
         .cabecera > .img img{
           width: 100%;
           height: 100%;
+        }
+        .cabecera .img{
+          animation: slideInIMG 3s ease-out forwards; /* Aplica la animación */
+         }
+         @keyframes slideInIMG {
+          0% {
+              transform: translateY(-500%); /* Fuera de la pantalla a la izquierda */
+              opacity: 0; /* Invisible al inicio */
+              
+          }
+         
+          100% {
+              transform: translateY(0); /* Posición final en el lugar original */
+              opacity: 1;
+          }
         }
           p{
             text-align: center;
@@ -80,14 +94,16 @@
               font-family: "Grenze Gotisch", serif;
               font-optical-sizing: auto;
               font-weight:400;
-              width: 90%;
+              width: 100%;
               margin-top: 20px;
+              color:#94a1b2;
               /* border: 1px solid white; */
           }
   
 h1{
   font-family: "BatmanForeverAlternate"; 
   font-size:2.5rem;
+  color: #fffffe;
   display: none;
 }
 #carousel{
@@ -170,29 +186,6 @@ h2, h4{
         margin-top:10px;
         /* border: 2px solid  gray; */
         }
-        .BTN{
-          width:120px;
-          display: flex;
-          justify-content: center;
-          border-radius: 7px;
-          padding: 2px;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
-          margin: auto;
-          margin-top:130px;
-          }
-          button.btn-delete{
-            flex-wrap: wrap;
-            padding:6px;
-            border: 0px;
-            cursor: pointer;
-            text-align: center;
-            margin-left:0px;
-            margin-top:0px;
-            font-size: 0.7rem;
-            margin: auto;
-            /* border:1px solid  red */
-          }
 /*section---2*/
 #section-2{
   /* display: flex; */
@@ -216,93 +209,29 @@ main  #section-2 li.clickable{
   margin: auto;
   margin-top: 10px;
 }
-
-.datos{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: auto;
-  width: 70%;
-  border: 1px solid goldenrod;
-  font-size:0.6rem;
-  margin-top: 5px;
-  color:gold;
-  padding: 5px;
-}
-.datos:hover{
-  color: white;
+/*BOTON VOLVER*/
+.cajaBotonVolver{
+  width: 45px;
+  height: 45px;
+  position: fixed;
   cursor: pointer;
-}
-/*SECTION 3*/
-main #section-3{
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  width: 100%;
-  flex-wrap:wrap;
-  margin-top: 30px;
-  text-align: center;
-  top:150px;
+  scroll-behavior: smooth;
+  /* z-index: 1; */
+  top: 80%;
+  right:2%;
   /* border: 1px solid red; */
 }
-main #section-3 p{
-  margin:auto;
-  margin-top: 20px;
-}
-main #section-3 ul {
-  width:100%;
-  height: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  margin: auto;
-  margin-top: 20px;
-  justify-content: space-around;
-  /* border: 1px solid aqua; */
-}
-main #section-3 ul li{
+.cajaImgBotonVolver{
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
   padding: 5px;
-  flex-wrap: wrap;
-  flex-direction:row;
-  width:50%;
-  margin-top: 5px;
-  margin: auto;
-  /* border: 1px solid yellow; */
+  background-color: yellow;
+  border: 1px solid yellow;
 }
-
-#audioPlayer{ 
-  display: flex;
-  flex-wrap: wrap;
-  border-radius:0px;
-  width:100%;
-  border:1px solid goldenrod;
-  background-color: white;
-  border-radius: 5px;
-}
-.playButton{
-  width:0px;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  font-size: 0;
-  padding:0px;
-  height: 0;
-  border: none;
-  cursor: pointer;
-}
-.btnMusica{
-          cursor: pointer;
-          width:40%;
-          display: flex;
-          justify-content: center;
-          /* margin-left: 30px;*/
-          margin: auto;
-          margin-top:40px; 
-          border-radius: 7px;
-          padding: 7px;
-          font-size: 0.9rem;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
+.cajaImgBotonVolver img{
+  width: 100%;
+  height:100%;
 }
 #sugerencias{
   width: 100%;
@@ -312,25 +241,26 @@ main #section-3 ul li{
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 60px;
+  padding:5px;
   /* border: 1px solid yellow; */
 }
 #sugerencias a{
-  color: white;
+  color:#94a1b2;
   cursor: pointer;
   font-size: 1.5rem;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: "Grenze Gotisch", serif;
 }
 #sugerencias a:hover{
+  color: #7f5af0;
   font-size: 1.8rem;
 }
 #sugerencias p{
   width: 100%;
   font-size: 1.2rem;
-  font-family: "Grenze Gotisch", serif;
+  color:#94a1b2;
 }
 /****footer****/
 footer{
@@ -338,12 +268,13 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  height: 50px;
   margin-top:170px;
-  padding:15px;
+  padding:10px;
   /* border: 1px solid red; */
 }
 footer a{
-  width: 90%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -351,17 +282,18 @@ footer a{
 }
 footer p{
   font-family: Arial, Helvetica, sans-serif;
-  width: 80%;
-  font-size: 0.8rem;
+  width: 100%;
+  font-size: 0.7rem;
   margin: auto;
-  color: black;
+  color:#94a1b2;
+  font-family: "BatmanForeverAlternate"; 
   /* border:1px solid yellow */
 }
 }
 /*******************************************************************************************************************/
 /*****************************************MEDIA QUERY DESDE TABLET**************************************************/
 /*******************************************************************************************************************/
-@media screen and (min-width:768px) and (max-width:1500px){
+@media screen and (min-width:769px) and (max-width:1500px){
      main{
       /* border: 1px solid yellow; */
       margin-top: 50px;
@@ -380,7 +312,21 @@ footer p{
         font-size: 0.8rem;
         /* border:1px solid violet; */
         }
+       .cabecera .img{
+        animation: slideInIMG 3s ease-out forwards; /* Aplica la animación */
+       }
+       @keyframes slideInIMG {
+        0% {
+            transform: translateX(500%); /* Fuera de la pantalla a la izquierda */
+            opacity: 0; /* Invisible al inicio */
+            
+        }
        
+        100% {
+            transform: translateX(0); /* Posición final en el lugar original */
+            opacity: 1;
+        }
+      }
           .cabecera p{
               font-size: 1.8rem;
               font-family: "Grenze Gotisch", serif;
@@ -428,6 +374,30 @@ h2, h4{
   color: #fffffe;
   border: 1px solid red;
 }
+/*BOTON VOLVER*/
+.cajaBotonVolver{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  
+  top: 90%;
+  right:2%;
+  /* border: 1px solid red; */
+}
+.cajaImgBotonVolver{
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+  padding: 5px;
+  background-color: yellow;
+  border: 1px solid yellow;
+}
+.cajaImgBotonVolver img{
+  width: 100%;
+  height:100%;
+}
 #sugerencias{
   width: 95%;
   margin: auto;
@@ -457,7 +427,6 @@ h2, h4{
   align-items: center;
   justify-content: center;
   color:#94a1b2;
-
   text-decoration: underline;
   cursor: pointer;
   font-size: 1.8rem;
@@ -483,6 +452,7 @@ footer{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
+  height: 70px;
   margin-top:170px;
   padding:15px;
   /* border: 1px solid red; */

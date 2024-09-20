@@ -1,7 +1,86 @@
- /*******************************************************************************************************************/
+/*******************************************************************************************************************/
+/*****************************************MEDIA QUERY MOBILE Y TABLET**************************************************/
+/*******************************************************************************************************************/
+@media screen and (min-width:320px) and (max-width:768px){
+  #carousel{
+    margin-top:0px;
+    /* border: 1px solid violet; */
+  }
+  #carousel p {
+          font-size: 1.2rem;
+          font-family: "Grenze Gotisch", serif;
+          font-weight:400;
+          width: 97%;
+          padding: 10px;
+          color:#94a1b2;
+          margin: auto;
+          margin-top: 50px;
+          text-align: center;
+          /* border: 1px solid yellow; */
+  }
+  .thepower-carousel{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    width: 100%;
+    margin: auto;
+    margin-top:20px;
+    padding: 20px;
+    background-color: #242629;
+    border-radius: 7px;
+    /* border: 1px solid green; */
+  }
+  
+  .scrollable-set{
+    display: flex;
+    flex-direction: column;
+    overflow-x:scroll;
+    overflow-y:hidden;
+    cursor: pointer;
+    height:210px;
+    width: 100%;
+    margin: auto;
+    margin-top:0px;
+    padding:0px;
+    background-color: #010101;
+    border: 2px solid #010101;
+    /* border: 1px solid blue; */
+    }
+    .scrollable-set > * {
+      flex-shrink: 0; /* Evita que los elementos hijos se reduzcan */
+    }
+    li.clickable{
+      display: flex;
+      /* width: 33%; */
+      height:100px;
+      margin-top:0px;
+      cursor: pointer;
+      border: 2px solid  gray;
+      }
+      li.clickable img{
+        width:100%;
+        height: 100%;
+        pointer-events: none;
+        padding:0px;
+        cursor: pointer;
+        }
+        div.image-preview{
+          width:300px;
+          height:300px;
+          background-position: top;
+          background-size:cover;
+          margin: auto;
+          margin-top: 7px;
+          border-radius: 5px;
+          border: 2px solid #010101;
+          box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+          }
+}
+
+/*******************************************************************************************************************/
 /*****************************************MEDIA QUERY DESDE TABLET**************************************************/
 /*******************************************************************************************************************/
-@media screen and (min-width:768px) and (max-width:1500px){
+@media screen and (min-width:769px) and (max-width:1500px){
     #carousel{
         margin-top:0px;
         /* border: 1px solid violet; */
@@ -75,8 +154,4 @@
               border: 2px solid #010101;
               box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
               }
-
-
-
-
 }

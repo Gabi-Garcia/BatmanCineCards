@@ -1,8 +1,8 @@
 import './MusicPlayer.css'
 
 export const initMusicPlayer = (audioPlayer, playButton, ulMusic, btnMusica) => {
-    playButton.addEventListener("click", function () {
-      if (audioPlayer.paused) {
+  playButton.addEventListener("click", function () {
+    if (audioPlayer.paused) {
         audioPlayer.play();
         playButton.textContent = "Pausar";
       } else {
