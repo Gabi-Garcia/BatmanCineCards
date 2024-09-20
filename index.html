@@ -4,42 +4,48 @@
     <meta charset="UTF-8" /> 
     <link rel="icon" type="image/svg+xml" href="https://seeklogo.com/images/B/Batman-logo-6ECADCDC52-seeklogo.com.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Batman</title>
+    <title>Batman CineCards</title>
   </head>  
   <body>
-    <header></header>
+    <header id="navbar-container"></header>
     <main>
       <div class="cabecera" id="cabecera">
-        <h1>Batman CineCards</h1>
         <div class="img">
           <img src="https://seeklogo.com/images/B/Batman-logo-6ECADCDC52-seeklogo.com.png">
         </div>
-
-        <p>"¡Te damos la bienvenida a <strong>©️BatmanCineCards</strong>, el lugar donde la historia de Batman cobra vida en cada tarjeta! Sumérgete en el emocionante
+        <h1>Batman CineCards</h1>
+        <p>¡Te damos la bienvenida a <strong>©️Batman CineCards</strong>, el lugar donde la historia de Batman cobra vida en cada tarjeta! Sumérgete en el emocionante
           mundo de Batman, desde 1969 hasta 2022. Descubre los secretos de cada peícula del Caballero de la Noche.
-          ¡Ven y únete a la aventura en <strong>©️BatmanCineCards</strong>, donde cada tarjeta es un recuerdo, y cada película, una experiencia única!"</p>          
+          ¡Ven y únete a la aventura en <strong>©️Batman CineCards</strong>, donde cada tarjeta es un recuerdo, y cada película, una experiencia única!</p>          
       </div>
       <section id="carousel">
         <div class="carousel">
-          <h2>Carousel de imágenes</h2>
-          <p>"¡Dale un giro a la rueda de la fortuna de Batman! <strong>Haz clic en una de las imágenes del carousel</strong> para desbloquear un mundo de 
+          <!-- <h2>Carousel de imágenes</h2> -->
+          <p><strong>Haz click en una de las imágenes del carousel</strong> para desbloquear un mundo de 
             tarjetas llenas de detalles sobre todas las películas del Caballero de la Noche. 
-            Solo tienes que hacer un click para desatar la magia de Batman. ¡Aventura garantizada!"
+            Solo tienes que hacer un click para desatar la magia de Batman. ¡Aventura garantizada!
           </p>
         </div>
         <div id="app"></div> 
-        <li id="btn-delete" class="BTN"><button class="btn-delete" click="limpiarBajoImagen()">Borrar tarjetas</button></li>
       </section>
       <section>
         <div id="section-2"></div>
+        <!--Botón para volver a la NAV-->
+        <div class="cajaBotonVolver">
+          <a href="#navbar-container">
+            <div class="cajaImgBotonVolver">
+              <img src="https://seeklogo.com/images/B/Batman-logo-6ECADCDC52-seeklogo.com.png">
+            </div>
+          </a>
+        </div>
       </section>
       <section>
         <div id="section-3">
-          <h2>Bandas Sonoras</h2>
-          <p>"¡Ponte los auriculares y sumérgete en el mundo de Batman como nunca antes! Escucha las épicas bandas sonoras que acompañaron
+          <!-- <h2>Bandas Sonoras</h2> -->
+          <p>¡Ponte los auriculares y sumérgete en el mundo de Batman como nunca antes! Escucha las épicas bandas sonoras que acompañaron
               al Caballero de la Noche en cada una de sus películas.
-              ¡Deja que la música te lleve a las calles oscuras de Gotham!"</p>
-              <button id="btnMusica" class="btnMusica" click="playMusic()">Música</button>
+              ¡Deja que la música te lleve a las calles oscuras de Gotham!</p>
+              <button id="btnMusica" class="btnMusica" click="playMusic()">PLAY</button>
                 <ul id="ulMusic" style="display:none;">
                   <li>
                     <p>Batman 1966</p>
@@ -80,39 +86,18 @@
         </div>
       </section>
       <div id="sugerencias"> 
-        <h4>Sugerencias</h4>
-        <p>"¿Tienes ideas para hacer de <strong>©️BatmanCineCards</strong> un mejor lugar para los fanáticos de Batman? 
+        <!-- <h4>Sugerencias</h4> -->
+        <p>¿Tienes ideas para hacer de <strong>©️BatmanCineCards</strong> un mejor lugar para los fanáticos de Batman? 
           ¡Queremos escucharlas! Tu opinión es valiosa. 
           Por favor, comparte tus sugerencias con nosotros para que juntos hagamos este sitio aún más increíble.
-          ¡Esperamos tus bati-ideas!"</p>
-          <a href="mailto:gabriel.garcia.development@gmail.com">Escríbeme</a>
+          ¡Esperamos tus bati-ideas!</p>
+          <a href="mailto:gabriel.garcia.development@gmail.com">Escríbenos</a>
       </div>
     </main>
     <footer>
-    <ul>
-      <li>
-        <a href="https://github.com/Gabi-Garcia"  target="_blank">
-          <div class="imgFooter">
-            <img src="/images/github (1).png" alt="Github-img">
-          </div>
+        <a href="https://gabi-garcia-portfolio.vercel.app/#"  target="_blank">
+          <p>© 2023 Creado por Gabi-Garcia</p>
         </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/gabriel-garcia-ab029b210/" target="_blank">
-          <div class="imgFooter">
-            <img src="/images/logotipo-de-linkedin (1).png" alt="Linkedin-img">
-          </div>
-        </a>
-      </li>
-      <li>
-        <a href="mailto:gabriel.garcia.development@gmail.com">
-          <div class="imgFooter">
-            <img src="/images/email.png" alt="email-img">
-          </div>
-        </a>
-      </li>      
-    </ul>
-    <p>Creado por Gabi-Garcia</p>
     </footer>
     <script type="module" src="/main.js"></script>
   </body> 

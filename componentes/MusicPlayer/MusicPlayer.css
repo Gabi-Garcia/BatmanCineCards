@@ -1,0 +1,196 @@
+/*************************************************************************************************************/
+/*****************************************MEDIA QUERY:MOBILE Y TABLET****************************************/
+/*************************************************************************************************************/
+@media screen and (min-width:320px) and (max-width:768px) {
+  /*SECTION 3*/
+main #section-3{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap:wrap;
+  margin-top: 30px;
+  text-align: center;
+  /* border: 1px solid red; */
+}
+main #section-3 p{
+  font-size: 1.2rem;
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  width: 97%;
+  margin: auto;
+  margin-top:0px;
+  padding: 10px;
+  text-align: center;
+  color:#94a1b2;
+  /* border: 1px solid yellow; */
+}
+.btnMusica{
+          cursor: pointer;
+          width:100px;
+          display: flex;
+          justify-content: center;
+          margin-top:40px; 
+          border: 1px solid #010101;
+          border-radius: 7px;
+          padding: 15px;
+          font-size: 0.9rem;
+          font-family: "BatmanForeverAlternate"; 
+          color: #fffffe;
+          background-color:#7f5af0;
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+          &&:hover{
+              background-color:#794eec; 
+          }
+}
+main #section-3 ul {
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction:column;
+  margin: auto;
+  margin-top: 20px;
+  justify-content: space-around;
+  padding: 10px;
+  border-radius: 7px;
+  background: -webkit-linear-gradient(to right, #434343,  #242629);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343,  #242629); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* border: 1px solid aqua; */
+}
+main #section-3 ul li{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 95%;
+    margin-top: 5px;
+    margin: auto;
+    /* border: 1px solid yellow; */
+  }
+  main #section-3 ul li p{
+      width: fit-content;
+      display: flex;
+      font-size: 1.2rem;
+      color: var(--color-secondary);
+      color:#94a1b2;
+      /* border: 1px solid red; */
+  }
+#audioPlayer{ 
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  background-color: white;
+  border-radius: 5px;
+  /* border: 1px solid red; */
+}
+#audioPlayer .audioPlayer{
+  border: 1px solid blue;
+}
+.playButton{
+  border: none;
+}
+}
+
+/*************************************************************************************************************/
+/*****************************************MEDIA QUERY: TABLET, DESKTOP****************************************/
+/*************************************************************************************************************/
+@media screen and (min-width:769px) and (max-width:1500px) {
+    /*SECTION 3*/
+main #section-3{
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap:wrap;
+    margin-top: 20px;
+    text-align: center;
+    top:150px;
+    /* border: 1px solid red; */
+  }
+  main #section-3 p{
+    font-size: 1.8rem;
+    font-family: "Grenze Gotisch", serif;
+    font-optical-sizing: auto;
+    font-weight:400;
+    width: 97%;
+    margin: auto;
+    margin-top: 90px;
+    padding: 10px;
+    text-align: center;
+    color:#94a1b2;
+    /* border: 1px solid yellow; */
+  }
+  .btnMusica{
+            cursor: pointer;
+            width:10%;
+            display: flex;
+            justify-content: center;
+            margin-top:40px; 
+            margin-left: 130px;
+            border: 1px solid #010101;
+            border-radius: 7px;
+            padding: 15px;
+            font-size: 0.9rem;
+            font-family: "BatmanForeverAlternate"; 
+            color: #fffffe;
+            background-color:#7f5af0;
+            box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5); /* Añadir sombra */
+            &&:hover{
+                background-color:#794eec; 
+            }
+  }
+  .botonPrueba{
+    color: fuchsia;
+  }
+  main #section-3 ul {
+    width:80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 7px;
+    background-color: #242629;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343,  #242629);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343,  #242629); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* border: 1px solid aqua; */
+  }
+  main #section-3 ul li{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction:row;
+      align-items: center;
+      padding: 5px;
+      width: 70%;
+      margin-top: 5px;
+      margin: auto;
+      /* border: 1px solid yellow; */
+    }
+    main #section-3 ul li p{
+        width: fit-content;
+        display: flex;
+        margin: auto;
+        color: var(--color-secondary);
+        color:#94a1b2;
+        /* border: 1px solid red; */
+    }
+  #audioPlayer{ 
+    display: flex;
+    flex-wrap: wrap;
+    border-radius:0px;
+    width:100%;
+    max-width:250px;
+    margin: 20px auto; 
+    background-color: white;
+    border-radius: 5px;
+  }
+  .playButton{
+    border: none;
+  }
+}

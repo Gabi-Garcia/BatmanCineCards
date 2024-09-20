@@ -2,7 +2,7 @@
 
 :root {
   --color-primary:rgba(255, 255, 255, 0.87);
-  --color-secondary: rgb(36, 36, 36);
+  --color-secondary:#16161a;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -11,11 +11,16 @@
   color: var(--color-primary);
   background-color:var(--color-secondary);
 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 *{
@@ -26,86 +31,26 @@
   list-style: none;
   text-decoration: none;
 }
+
+
 /***********************************************************************************************************/
 /**********************************************MOBILE*******************************************************/
 /**********************************************************************************************************/
-@media screen and (min-width:320px) and (max-width:767px){
+@media screen and (min-width:320px) and (max-width:768px){
   body{
     margin:1rem;
     padding:0rem;
   }
-   header{
+   /* header{
     width: 100%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     margin-top:0px;
     padding:0rem;
-    
-  }
-    /*
-  nav{
-    position: relative;
-    display: flex;
-    flex-direction:column;
-    width: 100%;
-    padding:7px;
-   
-  }
-  h3{
-    font-family: "BatmanForeverAlternate"; 
-    font-size:1.5rem;
-    position: absolute;
-    margin-left: 10%;
-    text-align: center;
-    
-  }
-  .burguer {
-
-    width: 40px;
-    height: 40px;
-    margin-top: 10px;
     border: 1px solid blue;
-  }
-  .burguer > .burguerButton{
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-  }
-  .burguer > .burguerButton > .burguerDiv{
-    width: 100%;
-    height: 100%;
-  }
-  .burguer > .burguerButton > .burguerDiv img{
-    width: 100%;
-    height: 100%;
-  }
-  nav ul{
-    padding:0px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    width: 100%;
-    gap:0rem;
-    margin-top:30px;
-   
-  }
-  nav ul li{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding:0px;
-    padding:00px;
-    gap:0px;
- 
-    }
-    nav ul li a{
-      padding: 0px;
-      font-family: "Grenze Gotisch", serif;
-      color:white;
-      font-size:1.2rem;
-      cursor: pointer;
-      } */
+  } */
       .cabecera{
         width: 100%;
         align-items: center;
@@ -115,19 +60,33 @@
         display: flex;
         flex-wrap:wrap;
         flex-direction:row;
-        margin-top:50px;
-        top:0px;
+        margin-top:30px;
         font-size: 0.8rem;
         /* border:1px solid violet; */
         }
         .cabecera > .img{
           width: 120px;
           height: 180px;
-          /* height: 50%; */
+         /* border: 1px solid yellow; */
         }
         .cabecera > .img img{
           width: 100%;
           height: 100%;
+        }
+        .cabecera .img{
+          animation: slideInIMG 3s ease-out forwards; /* Aplica la animación */
+         }
+         @keyframes slideInIMG {
+          0% {
+              transform: translateY(-500%); /* Fuera de la pantalla a la izquierda */
+              opacity: 0; /* Invisible al inicio */
+              
+          }
+         
+          100% {
+              transform: translateY(0); /* Posición final en el lugar original */
+              opacity: 1;
+          }
         }
           p{
             text-align: center;
@@ -135,14 +94,16 @@
               font-family: "Grenze Gotisch", serif;
               font-optical-sizing: auto;
               font-weight:400;
-              width: 90%;
+              width: 100%;
               margin-top: 20px;
+              color:#94a1b2;
               /* border: 1px solid white; */
           }
   
 h1{
   font-family: "BatmanForeverAlternate"; 
   font-size:2.5rem;
+  color: #fffffe;
   display: none;
 }
 #carousel{
@@ -225,29 +186,6 @@ h2, h4{
         margin-top:10px;
         /* border: 2px solid  gray; */
         }
-        .BTN{
-          width:120px;
-          display: flex;
-          justify-content: center;
-          border-radius: 7px;
-          padding: 2px;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
-          margin: auto;
-          margin-top:130px;
-          }
-          button.btn-delete{
-            flex-wrap: wrap;
-            padding:6px;
-            border: 0px;
-            cursor: pointer;
-            text-align: center;
-            margin-left:0px;
-            margin-top:0px;
-            font-size: 0.7rem;
-            margin: auto;
-            /* border:1px solid  red */
-          }
 /*section---2*/
 #section-2{
   /* display: flex; */
@@ -271,93 +209,29 @@ main  #section-2 li.clickable{
   margin: auto;
   margin-top: 10px;
 }
-
-.datos{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: auto;
-  width: 70%;
-  border: 1px solid goldenrod;
-  font-size:0.6rem;
-  margin-top: 5px;
-  color:gold;
-  padding: 5px;
-}
-.datos:hover{
-  color: white;
+/*BOTON VOLVER*/
+.cajaBotonVolver{
+  width: 45px;
+  height: 45px;
+  position: fixed;
   cursor: pointer;
-}
-/*SECTION 3*/
-main #section-3{
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  width: 100%;
-  flex-wrap:wrap;
-  margin-top: 30px;
-  text-align: center;
-  top:150px;
+  scroll-behavior: smooth;
+  /* z-index: 1; */
+  top: 80%;
+  right:2%;
   /* border: 1px solid red; */
 }
-main #section-3 p{
-  margin:auto;
-  margin-top: 20px;
-}
-main #section-3 ul {
-  width:100%;
-  height: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  margin: auto;
-  margin-top: 20px;
-  justify-content: space-around;
-  /* border: 1px solid aqua; */
-}
-main #section-3 ul li{
+.cajaImgBotonVolver{
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
   padding: 5px;
-  flex-wrap: wrap;
-  flex-direction:row;
-  width:50%;
-  margin-top: 5px;
-  margin: auto;
-  /* border: 1px solid yellow; */
+  background-color: yellow;
+  border: 1px solid yellow;
 }
-
-#audioPlayer{ 
-  display: flex;
-  flex-wrap: wrap;
-  border-radius:0px;
-  width:100%;
-  border:1px solid goldenrod;
-  background-color: white;
-  border-radius: 5px;
-}
-.playButton{
-  width:0px;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  font-size: 0;
-  padding:0px;
-  height: 0;
-  border: none;
-  cursor: pointer;
-}
-.btnMusica{
-          cursor: pointer;
-          width:40%;
-          display: flex;
-          justify-content: center;
-          /* margin-left: 30px;*/
-          margin: auto;
-          margin-top:40px; 
-          border-radius: 7px;
-          padding: 7px;
-          font-size: 0.9rem;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
+.cajaImgBotonVolver img{
+  width: 100%;
+  height:100%;
 }
 #sugerencias{
   width: 100%;
@@ -367,118 +241,63 @@ main #section-3 ul li{
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 60px;
+  padding:5px;
   /* border: 1px solid yellow; */
 }
 #sugerencias a{
-  color: white;
+  color:#94a1b2;
   cursor: pointer;
   font-size: 1.5rem;
   height: 30px;
-  margin-top: 10px;
+  margin-top: 20px;
   font-family: "Grenze Gotisch", serif;
 }
 #sugerencias a:hover{
+  color: #7f5af0;
   font-size: 1.8rem;
 }
 #sugerencias p{
   width: 100%;
   font-size: 1.2rem;
-  font-family: "Grenze Gotisch", serif;
+  color:#94a1b2;
 }
 /****footer****/
 footer{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top:70px;
-  padding:15px;
-}
-footer ul{
+  height: 50px;
+  margin-top:170px;
   padding:10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
+  /* border: 1px solid red; */
 }
-footer li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width:20px;
-  height:20px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
+footer a{
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid blue; */
 }
 footer p{
-  font-size: 1.1rem;
-  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  font-size: 0.7rem;
   margin: auto;
-  color: black;
+  color:#94a1b2;
+  font-family: "BatmanForeverAlternate"; 
+  /* border:1px solid yellow */
 }
 }
 /*******************************************************************************************************************/
 /*****************************************MEDIA QUERY DESDE TABLET**************************************************/
 /*******************************************************************************************************************/
-@media screen and (min-width:768px) and (max-width:1500px){
-  body{
-    margin:0.25rem;
-    padding:0.50rem;
-  }
-  /* header{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    margin-top:0px;
-    padding:2rem;
-  
-  }
-  nav{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding:7px;
-   
-  }
-  h3{
-    display: none;
-  }
-  nav ul{
-    padding:8px;
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    gap:0.25rem;
-    justify-content: space-between;
-    border: 1px solid blue;
-  }
-  .burguer{
-    display: none;
-  }
-  nav ul li{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding:10px;
-    padding:10px;
-    gap:0px;
-   
-    }
-    nav ul li a{
-      padding: 5px;
-      font-family: "Grenze Gotisch", serif;
-      color:white;
-      font-size:1.5rem;
-      cursor: pointer;
-      } */
+@media screen and (min-width:769px) and (max-width:1500px){
+     main{
+      /* border: 1px solid yellow; */
+      margin-top: 50px;
+     }
       .cabecera{
         width: 100%;
         align-items: center;
@@ -489,287 +308,168 @@ footer p{
         flex-wrap:wrap;
         flex-direction:row;
         margin-top:5px;
-        top:80px;
+        top:0px;
         font-size: 0.8rem;
         /* border:1px solid violet; */
         }
-          p{
-            text-align: center;
-            font-size: 1.5rem;
+       .cabecera .img{
+        animation: slideInIMG 3s ease-out forwards; /* Aplica la animación */
+       }
+       @keyframes slideInIMG {
+        0% {
+            transform: translateX(500%); /* Fuera de la pantalla a la izquierda */
+            opacity: 0; /* Invisible al inicio */
+            
+        }
+       
+        100% {
+            transform: translateX(0); /* Posición final en el lugar original */
+            opacity: 1;
+        }
+      }
+          .cabecera p{
+              font-size: 1.8rem;
               font-family: "Grenze Gotisch", serif;
               font-optical-sizing: auto;
               font-weight:400;
-              width: 90%;
-              margin-top: 20px;
+              width: 97%;
+              margin-top: 90px;
+              padding: 10px;
+              color:#94a1b2;
+              text-align: center;
+              /* border: 1px solid green; */
           }
   
-h1{
-  font-family: "BatmanForeverAlternate"; 
-  font-size: 6rem;
+h1 {
+  font-family: "BatmanForeverAlternate";
+  font-size: 4rem;
+  color: #fffffe;
+  animation: colorChange 2s infinite; 
+  animation: slideIn 3s ease-out forwards; /* Aplica la animación */
 }
-#carousel{
-  margin-top:50px;
-  /* border: 1px solid violet; */
+
+/* Definir la animación */
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%); /* Fuera de la pantalla a la izquierda */
+      opacity: 1; /* Invisible al inicio */
+      color:rgb(207, 207, 121);
+  }
+  50% {
+      opacity: 0.5; /* Se hace visible a mitad del trayecto */
+      color:#7f5af0;
+  }
+  100% {
+      transform: translateX(0); /* Posición final en el lugar original */
+      color: #fffffe;
+  }
 }
-#carousel p {
-  margin: auto;
-  margin-top: 30px;
-}
+
 h2, h4{
   width: 50%;
   text-align: center;
   margin: auto;
   font-family: "BatmanForeverAlternate"; 
   font-size: 2rem;
+  color: #fffffe;
+  border: 1px solid red;
+}
+/*BOTON VOLVER*/
+.cajaBotonVolver{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  cursor: pointer;
+  scroll-behavior: smooth;
+  
+  top: 90%;
+  right:2%;
   /* border: 1px solid red; */
 }
-.thepower-carousel{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:column;
-  width: 80%;
-  justify-content: space-around;
-  height:100vh;
-  margin: auto;
-  margin-top: 30px;
-  /* border: 1px solid green; */
-}
-
-.scrollable-set{
-  display: flex;
-  padding:5px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  align-items: center;
-  gap: 0.30rem;
-  margin-top:0px;
-  cursor: pointer;
-  width:25%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  margin-left:15px;
-  border: 2px solid  gray;
-  }
-  li.clickable{
-    display: flex;
-    flex-direction: column;
-    width:180px;
-    height:200px;
-    margin-top:0px;
-    cursor: pointer;
-    border: 2px solid  gray;
-    }
-    li.clickable img{
-      width:100%;
-      height: 100%;
-      pointer-events: none;
-      padding:0px;
-      cursor: pointer;
-      /* border: 1px solid  goldenrod; */
-      }
-      div.image-preview{
-        width:70%;
-        height:100%;
-        margin: auto;
-        background-position:top;
-        background-repeat:no-repeat;
-        background-size:cover;
-        background-color:var(--color-secondary);
-        border-radius: 10px;
-        margin-top:0px;
-        /* border: 2px solid  gray; */
-        }
-        .BTN{
-          width:150px;
-          display: flex;
-          justify-content: center;
-          border-radius: 7px;
-          padding: 10px;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
-          margin: auto;
-          margin-top:60px;
-          }
-          button.btn-delete{
-            flex-wrap: wrap;
-            padding:6px;
-            border: 0px;
-            cursor: pointer;
-            text-align: center;
-            margin-left:0px;
-            margin-top:0px;
-            font-size: 0.9rem;
-            margin: auto;
-            /* border:1px solid  red */
-          }
-/*section---2*/
-#section-2{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.cajaImgBotonVolver{
   width: 100%;
   height: 100%;
-  padding: 20px;
-  /* border: 1px solid white; */
-}
-main  #section-2 li.clickable{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width:350px;
-  height:450px;
-  align-items: center;
-  margin: auto;
-  margin-top: 20px;
-  /* border: 1px solid green; */
-}
-
-.datos{
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  flex-direction: column;
-  margin: auto;
-  width: 70%;
-  border: 2px solid goldenrod;
-  font-size:0.7rem;
-  margin-top: 5px;
-  color:gold;
+  border-radius: 100px;
   padding: 5px;
+  background-color: yellow;
+  border: 1px solid yellow;
 }
-.datos:hover{
-  color: white;
-  cursor: pointer;
-}
-/*SECTION 3*/
-main #section-3{
-  display: flex;
-  margin: auto;
-  flex-direction: column;
+.cajaImgBotonVolver img{
   width: 100%;
-  flex-wrap:wrap;
-  margin-top: 20px;
-  text-align: center;
-  top:150px;
-  /* border: 1px solid red; */
-}
-main #section-3 ul {
-  width:70%;
-  height: 50%;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction:row;
-  margin: auto;
-  margin-top: 20px;
-  justify-content: space-around;
-  /* border: 1px solid aqua; */
-}
-main #section-3 ul li{
-  padding: 5px;
-  flex-wrap: wrap;
-  flex-direction:row;
-  width:20%;
-  margin-top: 5px;
-  margin: auto;
-  /* border: 1px solid yellow; */
-}
-#audioPlayer{ 
-  display: flex;
-  flex-wrap: wrap;
-  border-radius:0px;
-  width:100%;
-  max-width:250px;
-  margin: 20px auto; 
-  border:1px solid goldenrod;
-  background-color: white;
-  border-radius: 5px;
-}
-.playButton{
-  width:0px;
-  text-align: center;
-  justify-content: center;
-  margin: auto;
-  font-size: 0;
-  padding:0px;
-  height: 0;
-  border: none;
-  cursor: pointer;
-}
-.btnMusica{
-          cursor: pointer;
-          width:10%;
-          display: flex;
-          justify-content: center;
-          /* margin-left: 30px;*/
-          margin: auto;
-          margin-top:40px; 
-          border-radius: 7px;
-          padding: 15px;
-          font-size: 0.9rem;
-          border:1px solid goldenrod;
-          background-color: rgb(241, 235, 235);
+  height:100%;
 }
 #sugerencias{
-  width: 80%;
+  width: 95%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 70px;
   padding: 20px;
-  /* border: 1px solid yellow; */
-}
-#sugerencias a{
-  color: white;
-  cursor: pointer;
-  font-size: 1.8rem;
-  height: 30px;
-  font-family: "Grenze Gotisch", serif;
-}
-#sugerencias a:hover{
-  font-size: 2rem;
 }
 #sugerencias p{
+  font-size: 1.8rem;
+  font-family: "Grenze Gotisch", serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  width: 97%;
+  margin-top: 90px;
+  padding: 10px;
+  color:#94a1b2;
+  text-align: center;
+}
+#sugerencias a{
+  width: 30%;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  color:#94a1b2;
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 1.8rem;
+  margin-top: 30px;
+  height: 40px;
+  font-family: "Grenze Gotisch", serif;
+  /* border: 1px solid red; */
+}
+#sugerencias a:hover{
+  font-size: 1.9rem;
+  color: #7f5af0;
+}
+#sugerencias p{
+  margin-top: 40px;
   font-size: 1.5rem;
   font-family: "Grenze Gotisch", serif;
+ 
+  /* border: 1px solid white; */
 }
 /****footer****/
 footer{
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   justify-content: center;
   width: 100%;
-  margin-top:70px;
+  height: 70px;
+  margin-top:170px;
   padding:15px;
+  /* border: 1px solid red; */
 }
-footer ul{
-  padding:10px;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-around;
-}
-footer li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width:25px;
-  height:25px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
+footer a{
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* border: 1px solid blue; */
 }
 footer p{
-  font-size: 1.2rem;
-  width: 50%;
+  font-family: "BatmanForeverAlternate"; 
+  width: 70%;
+  font-size: 1rem;
   margin: auto;
-  color: black;
+  color:#94a1b2;
+  /* border:1px solid yellow */
 }
 }
