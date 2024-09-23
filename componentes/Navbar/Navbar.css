@@ -9,7 +9,7 @@
             width: 95%;
             align-items: center;
             margin: auto;
-            margin-top: 15px;
+            margin-top: 40px;
             padding: 10px;
             justify-content: space-between;
             /* border: 1px solid yellow; */
@@ -64,7 +64,6 @@
         /* border: 1px solid green; */
     }
     nav > ul > li > a {
-        font-family: "Grenze Gotisch", serif;
         font-family: "BatmanForeverAlternate"; 
         color:white;
         display: flex;
